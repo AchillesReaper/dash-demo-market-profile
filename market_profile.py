@@ -3,7 +3,6 @@ from dateutil.relativedelta import relativedelta
 from dash import Dash, html, dcc, Output, Input
 import plotly.graph_objects as go
 import pandas as pd
-import sys
 import ast
 
 pd.set_option('display.max_columns', None)
@@ -32,6 +31,7 @@ fig.update_layout(
 )
 
 app = Dash(__name__)
+server = app.server
 app.layout = [
     html.Div(
         className='row', 
