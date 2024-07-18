@@ -93,4 +93,4 @@ def update_output(start_date, end_date):
     
     return fig
 
-app.run_server(debug=True, port=8081)
+app.run_server(debug=True)
